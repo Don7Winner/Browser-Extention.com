@@ -1,0 +1,78 @@
+@media (max-width: 1308px) {
+  /* .extention {
+    padding-right: 0.3rem;
+  } */
+
+  .extention div:first-child img {
+    align-self: flex-start;
+  }
+  main {
+    margin: 3rem;
+  }
+}
+@media (max-width: 1180px) {
+  main {
+    margin: 3rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 750px) {
+  main {
+    margin: 3rem 7rem;
+  }
+  .Extention-Browser {
+    grid-template-columns: 1fr;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    gap: 1rem;
+  }
+  .nav-list p {
+    font-size: 3rem;
+  }
+  .nav-all {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 660px) {
+  main {
+    margin: 3rem 5rem;
+  }
+}
+@media (max-width: 520px) {
+  main {
+    margin: 3rem;
+  }
+  .nav-list p {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 420px) {
+  main {
+    margin: 3rem 1rem;
+  }
+  .nav-list p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 373px) {
+  .nav-list p {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 330px) {
+  .nav-list p {
+    font-size: 2rem;
+  }
+  .Extention-head img:first-child {
+    height: 35px;
+  }
+}

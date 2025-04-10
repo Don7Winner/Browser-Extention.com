@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: linear-gradient(hsl(227, 75%, 14%), hsl(227, 75%, 14%));
+  background-blend-mode: hue;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+main {
+  margin: 3rem 7rem;
+  padding-bottom: 3rem;
+}
+.Extention-head {
+  background-color: hsl(225, 23%, 24%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.8rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 3rem;
+}
+
+.Extention-head img:nth-child(2) {
+  background-color: hsl(226, 11%, 37%);
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.Extention-head img:last-child {
+  background-color: hsl(0, 0%, 93%);
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+nav {
+  color: hsl(200, 60%, 99%);
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.nav-list p {
+  font-size: 2rem;
+}
+.nav-all {
+  display: flex;
+  gap: 1rem;
+}
+.border {
+  background-color: hsl(226, 11%, 37%);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.border:hover {
+  background-color: hsl(3, 86%, 64%);
+  color: hsl(227, 75%, 14%);
+}
+.borderColor:hover {
+  background-color: hsl(3, 77%, 44%);
+  background-color: yellow;
+  color: hsl(200, 60%, 99%);
+}
+.Extention-Browser {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+.extention {
+  background-color: hsl(226, 25%, 17%);
+  border: 1px solid hsl(0, 0%, 78%);
+  border-radius: 0.6rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* THE STYLING OF DEVLENS  */
+.extention div:first-child {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.writeUp h3 {
+  color: hsl(200, 60%, 99%);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.writeUp p:last-child {
+  color: hsl(0, 0%, 78%);
+}
+button {
+  color: hsl(0, 0%, 78%);
+  background: none;
+  border: 1px solid hsl(0, 0%, 78%);
+  border-radius: 0.8rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+/* THE CODE FOR THHE SWITCH BUTTON  */
+/* Switch Styling */
+.change-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(226, 11%, 37%);
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: hsl(200, 60%, 99%);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: hsl(3, 86%, 64%);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}

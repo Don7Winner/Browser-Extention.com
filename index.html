@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Browser extensions manager UI</title>
+    <!-- THE LINK FOR THE FONT STYLE / -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- THE LINK FOR STYLESHEET AND MEDIA QUERY  -->
+    <link rel="stylesheet" href="CSS/Stylesheet.css" />
+    <link rel="stylesheet" href="CSS/Responsiveness.css" />
+  </head>
+  <body>
+    <main>
+      <div class="Extention-head">
+        <img src="assets/images/logo.svg" alt="Extension logo" />
+        <img src="assets/images/icon-sun.svg" alt="Sun logo" id="Sun" />
+        <img src="assets/images/icon-moon.svg" alt="Moon logo" id="Moon" />
+      </div>
+      <nav>
+        <div class="nav-list"><p>Extensions List</p></div>
+        <div class="nav-all">
+          <p class="border">All</p>
+          <p class="border" id="Active">Active</p>
+          <p class="border" id="Inactive">Inactive</p>
+        </div>
+      </nav>
+
+      <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+      <div class="Extention-Browser">
+        <div class="devlens extention">
+          <div>
+            <img src="assets/images/logo-devlens.svg" alt="devlens logo" />
+            <div class="writeUp">
+              <h3>DevLens</h3>
+              <p>
+                Quickly inspect page layouts and visualize element boundaries.
+              </p>
+            </div>
+          </div>
+          <div class="change-section">
+            <button>Remove</button>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="StyleSpy extention">
+          <div>
+            <img src="assets/images/logo-style-spy.svg" alt="stylespy logo" />
+            <div class="writeUp">
+              <h3>StyleSpy</h3>
+              <p>Instantly analyze and copy CSS from any webpage element.</p>
+            </div>
+          </div>
+          <div class="change-section">
+            <button>Remove</button>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="SpeedBoost extention">
+          <div>
+            <img
+              src="assets/images/logo-speed-boost.svg"
+              alt="speed boost logo"
+            />
+            <div class="writeUp">
+              <h3>SpeedBoost</h3>
+              <p>
+                Optimizes browser resource usage to accelerate page loading.
+              </p>
+            </div>
+          </div>
+          <div class="change-section">
+            <button>Remove</button>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="JSONWizared extention">
+          <div>
+            <img
+              src="assets/images/logo-json-wizard.svg"
+              alt="Jason Wizard logo"
+            />
+            <div class="writeUp">
+              <h3>JSONWizard</h3>
+              <p>
+                Formats, validates, and prettifies JSON responses in-browser.
+              </p>
+            </div>
+          </div>
+          <div class="change-section">
+            <button>Remove</button>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="TabMaster extention">
+          <div>
+            <img
+              src="assets/images/logo-tab-master-pro.svg"
+              alt="TabMaster logo"
+            />
+            <div class="writeUp">
+              <h3>TabMaster Pro</h3>
+              <p>Organizes browser tabs into groups and sessions.</p>
+            </div>
+          </div>
+          <div class="change-section">
+            <button>Remove</button>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="ViewportBuddy extention">
+          <div>
+            <img
+              src="assets/images/logo-viewport-buddy.svg"
+              alt="Viewport buddy logo"
+            />
+            <div class="writeUp">
+              <h3>ViewportBuddy</h3>
+              <p>
+                Simulates various screen resolutions directly within the
+                browser.
+              </p>
+            </div>
+          </div>
+          <div class="change-section">
+            <button>Remove</button>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="Markup extention">
+          <div>
+            <img
+              src="assets/images/logo-markup-notes.svg"
+              alt="Markup Note logo"
+            />
+            <div class="writeUp">
+              <h3>Markup Notes</h3>
+              <p>
+                Enables annotation and notes directly onto webpages for
+                collaborative debugging.
+              </p>
+            </div>
+          </div>
+          <div class="change-section">
+            <button>Remove</button>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="GridGuides extention">
+          <div>
+            <img
+              src="assets/images/logo-grid-guides.svg"
+              alt="Grid Guide logo"
+            />
+            <div class="writeUp">
+              <h3>GridGuides</h3>
+              <p>
+                Overlay customizable grids and alignment guides on any webpage.
+              </p>
+            </div>
+          </div>
+          <div class="change-section">
+            <button>Remove</button>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="Palette extention">
+          <div>
+            <img
+              src="assets/images/logo-palette-picker.svg"
+              alt="Palette logo"
+            />
+            <div class="writeUp">
+              <h3>Palette Picker</h3>
+              <p>Instantly extracts color palettes from any webpage.</p>
+            </div>
+          </div>
+          <div class="change-section">
+            <button>Remove</button>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="LinkChecker extention">
+          <div>
+            <img
+              src="assets/images/logo-link-checker.svg"
+              alt="Link Checker logo"
+            />
+            <div class="writeUp">
+              <h3>LinkChecker</h3>
+              <p>Scans and highlights broken links on any page.</p>
+            </div>
+          </div>
+          <div class="change-section">
+            <button>Remove</button>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="DOM extention">
+          <div>
+            <img
+              src="assets/images/logo-dom-snapshot.svg"
+              alt="DOM Snapshot logo"
+            />
+            <div class="writeUp">
+              <h3>DOM Snapshot</h3>
+              <p>Capture and export DOM structures quickly.</p>
+            </div>
+          </div>
+          <div class="change-section">
+            <button>Remove</button>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="ConsolePlus extention">
+          <div>
+            <img
+              src="assets/images/logo-console-plus.svg"
+              alt="Console Plus logo"
+            />
+            <div class="writeUp">
+              <h3>ConsolePlus</h3>
+              <p>
+                Enhanced developer console with advanced filtering and logging.
+              </p>
+            </div>
+          </div>
+          <div class="change-section">
+            <button>Remove</button>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="CSS/index.js"></script>
+  </body>
+</html>
