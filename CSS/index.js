@@ -64,6 +64,7 @@ $(document).ready(() => {
       .removeClass("borderColor")
       .css("backgroundColor", "hsl(226, 11%, 37%)")
       .css("color", "hsl(200, 60%, 99%)");
+    $(".nav-list p").css("color", "hsl(200, 60%, 99%)");
     $(".extention").css("backgroundColor", "hsl(226, 25%, 17%)");
     $("h3").css("color", "hsl(200, 60%, 99%)");
     $(".writeUp p").css("color", "hsl(0, 0%, 78%)");
